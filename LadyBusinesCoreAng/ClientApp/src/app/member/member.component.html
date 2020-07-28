@@ -1,0 +1,18 @@
+<div class="container">
+
+    <h4>Let&apos;s turn it up to 11</h4>
+    <hr />
+    <div class="row">
+
+        <p *ngIf="!members"><em>Loading...</em></p>
+        <div class="col" *ngIf="members">
+            <div class="card" *ngFor="let member of members">
+                <p>{{ member.fname }}</p>
+                <p>{{ member.nickname }}</p>
+                <p>{{ member.summary }}</p>
+                <p>{{ member.imagefile }}</p>
+                <p>{{ member.specialguest}}</p>
+            </div>
+        </div>
+    </div>
+</div>
