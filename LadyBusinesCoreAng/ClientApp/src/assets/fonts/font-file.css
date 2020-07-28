@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'FuturaBlaD';
+  src: url("/assets/fonts/FuturaBlaD.ttf") format('opentype');
+}
+
+@font-face {
+  font-family: 'EdwardianScriptITC';
+  src: url("/assets/fonts/EdwardianScriptITC.tff") format('opentype');
+}
