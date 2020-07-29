@@ -31,34 +31,51 @@ html {
 .lady {
   font-family: 'EdwardianScriptITC';
   color: #E91966;
-  margin-right: 5px;
   font-size: 40px;
-}
-
-a.brand-logo {
-  min-width: 250px;
+  position: relative;
+  top: -10px;
+  z-index: 1;
 }
 
 .business {
   font-family: 'FuturaBlaD';
   color: #000;
   text-shadow: -1px 0 #cdd0d7, 0 1px #cdd0d7, 1px 0 #cdd0d7, 0 -1px #cdd0d7;
-  padding-left: 5px;
   font-size: 40px;
+  position: relative;
+  left: -7px;
+  top: 7px;
+}
+
+a.brand-logo {
+  min-width: 235px;
+  position: relative;
+  left: -15px;
 }
 
 nav {
-  background: url("/assets/images/speaker_grill.jpg");
+  background: url("/assets/images/speaker_grill_1.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% auto;
-  height: 65px;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
 }
 
 ul a {
-  padding-right: 30px !important;
   font-family: 'Rock Salt', cursive;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  color: #CDD0D7 !important;
-  ;
+  color: #EFF0F5 !important;
+}
+
+a.nav-link {
+  font-size: 1.25em !important;
+  padding: 1px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(192,192,192, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(192,192,192);
 }
