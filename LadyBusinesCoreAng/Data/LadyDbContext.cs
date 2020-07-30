@@ -27,7 +27,7 @@ namespace LadyBusinesCoreAng
                     .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
                     .AddJsonFile("appsettings.json")
                     .Build();
-                    
+
                 optionsBuilder.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
             }
         }

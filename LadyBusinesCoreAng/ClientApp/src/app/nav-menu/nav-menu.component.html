@@ -1,8 +1,10 @@
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container">
-            <a class="navbar-brand" [routerLink]="['/']">LadyBusinesCoreAng</a>
-            <button class="navbar-toggler"
+    <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container nav-wrapper">
+            <a class="navbar-brand brand-logo" [routerLink]="['/']">
+                <span class="lady">Lady</span><span class="business">business</span>
+            </a>
+            <button class="navbar-toggler custom-toggler"
                     type="button"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
@@ -13,20 +15,24 @@
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
                  [ngClass]="{ show: isExpanded }">
+
                 <ul class="navbar-nav flex-grow">
                     <li class="nav-item"
                         [routerLinkActive]="['link-active']"
                         [routerLinkActiveOptions]="{ exact: true }">
-                        <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+                        <a class="nav-link" [routerLink]="['/members']">Bios</a>
                     </li>
                     <li class="nav-item" [routerLinkActive]="['link-active']">
-                        <a class="nav-link text-dark" [routerLink]="['/counter']">Counter</a>
+                        <a class="nav-link" [routerLink]="['/photos']">Pics</a>
                     </li>
                     <li class="nav-item" [routerLinkActive]="['link-active']">
-                        <a class="nav-link text-dark" [routerLink]="['/fetch-data']">Fetch data</a>
+                        <a class="nav-link" [routerLink]="['/songs']">Songs</a>
                     </li>
                     <li class="nav-item" [routerLinkActive]="['link-active']">
-                        <a class="nav-link text-dark" [routerLink]="['/members']">Members</a>
+                        <a class="nav-link" [routerLink]="['/gigs']">Gigs</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['link-active']">
+                        <a class="nav-link" [routerLink]="['/contact']">Contact</a>
                     </li>
                 </ul>
             </div>

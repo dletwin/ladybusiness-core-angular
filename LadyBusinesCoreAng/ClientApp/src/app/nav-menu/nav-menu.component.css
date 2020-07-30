@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'FuturaBlaD';
+  src: url("/assets/fonts/FuturaBlaD.ttf") format('opentype');
+}
+
+@font-face {
+  font-family: 'EdwardianScriptITC';
+  src: url("/assets/fonts/EdwardianScriptITC.tff") format('opentype');
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -7,6 +17,7 @@ a.navbar-brand {
 html {
   font-size: 14px;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -15,4 +26,57 @@ html {
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.lady {
+  font-family: 'EdwardianScriptITC';
+  color: #E91966;
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+  z-index: 1;
+}
+
+.business {
+  font-family: 'FuturaBlaD';
+  color: #000;
+  text-shadow: -1px 0 #cdd0d7, 0 1px #cdd0d7, 1px 0 #cdd0d7, 0 -1px #cdd0d7;
+  font-size: 40px;
+  position: relative;
+  left: -7px;
+  top: 7px;
+}
+
+a.brand-logo {
+  min-width: 235px;
+  position: relative;
+  left: -15px;
+}
+
+nav {
+  background-image: url("/assets/images/speaker_grill_1.jpg");
+  background-size: 100% 87px;
+  background-repeat: no-repeat;
+  background-color: gray !important;
+  background-position: top;
+}
+
+
+ul a {
+  font-family: 'Rock Salt', cursive;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #EFF0F5 !important;
+}
+
+a.nav-link {
+  font-size: 1.25em !important;
+  padding: 1px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(192,192,192, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(192,192,192);
 }
