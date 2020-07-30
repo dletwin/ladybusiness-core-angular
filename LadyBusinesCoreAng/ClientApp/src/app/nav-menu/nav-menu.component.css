@@ -54,12 +54,13 @@ a.brand-logo {
 }
 
 nav {
-  background: url("/assets/images/speaker_grill_1.jpg");
+  background-image: url("/assets/images/speaker_grill_1.jpg");
+  background-size: 100% 87px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100%;
+  background-color: gray !important;
+  background-position: top;
 }
+
 
 ul a {
   font-family: 'Rock Salt', cursive;
